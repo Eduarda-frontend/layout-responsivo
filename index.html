@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="container-flex">
+
+                <h1>EBAC Projetos</h1>  
+                <div class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="container-flex">
+                    <ul class="menu container-flex">
+                        <li class="container-flex"><a href="#sobre">Sobre</a></li>
+                        <li class="container-flex"><a href="#repositorios">Repositórios</a></li>
+                        <li class="container-flex"><a href="#contato">Contato</a></li>
+                    </ul>
+            </nav>
+
+        </header>
+
+        <div class="clear"></div>
+
+        <main>
+
+            <section class="sobre">
+                <div class="container-flex">
+                    <div>
+                        <h2 id="sobre">Sobre</h2>
+                        <p>Loja destinada a divulgação dos projetos pessoais da desenvolvedora.</p>
+                        <p>Olá, que bom que está aqui! Me chamo Maria Eduarda e estou em transição de carreira para a área de tecnologia. 
+                        Com quase 4 anos de experiência no ramo de turismo, decidi buscar novos desafios e me encontrei apaixonada pleo desenvolvimento front-end. 
+                        Atualmente, curso a formação profissionalizante da EBAC de Engenheiro de Front-end, onde aprimoro minhas habilidades técnicas e me preparo para os desafios do mercado. </p>
+                    </div>
+                    <img src="./img/autora.jpeg" alt="Autora da página">
+                </div>
+            </section>
+
+            <section class="repositorios">
+                <h2 id="repositorios">Repositórios</h2>
+                <ul>
+                    <li>
+                        <img src="./img/formulario.png" alt="Página do formulário">
+                        <h3>Formulário de cadastro</h3>
+                        <p>Antes de enviar o formulário, o sistema verifica se todos estão preenchidos.</p>
+                        <button type="button">Agregar ao projeto</button>
+                    </li>
+                    <li>
+                        <img src="./img/agenda.png" alt="Página agenda de contatos">
+                        <h3>Agenda de contatos</h3>
+                        <p>Os usuários podem inserir o nome e o telefone do contato.</p>
+                        <button type="button">Agregar ao projeto</button>
+                    </li>
+                    <li>
+                        <img src="./img/calculadora.png" alt="Página da calculadora de médias">
+                        <h3>Calculadora de médias</h3>
+                        <p>Os usuários podem definir a média de aprovação e inserir o nome e a nota de suas atividades em uma tabela.</p>
+                        <button type="button">Agregar ao projeto</button>
+                    </li>
+                    <li>
+                        <img src="./img/galeria.png" alt="Página galeria de fotos">
+                        <h3>Galeria de fotos</h3>
+                        <p>O usuário pode adicionar novas fotos na página através de URLs, com validação da URL realizada. </p>
+                        <button type="button">Agregar ao projeto</button>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contato">
+                <form>
+                    <h2>Contato</h2>
+
+                    <div class="container-flex">
+
+                        <label for="nome"> Nome:
+                            <input type="text" name="nome" id="nome">
+                        </label>
+    
+                        <label for="telefone"> Telefone:
+                            <input type="tel" id="telefone" name="telefone">
+                        </label>
+    
+                        <label for="email">E-mail:
+                            <input type="email" name="email" id="email">
+                        </label>
+    
+                        <label for="projeto">Projeto de interesse:
+                            <input type="text" name="projeto" id="projeto">
+                        </label>
+    
+                        <label for="mensagem">Mensagem:
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                        </label>
+
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="container-flex">
+            <p>
+                2024 &copy; EBAC Projetos - Todos os direitos reservados
+            </p>
+
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/linkedin_icon-icons.com_61252.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
